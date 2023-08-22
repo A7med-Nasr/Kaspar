@@ -1,0 +1,1932 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.599), rgba(0, 0, 0, 0.599)), url(../img/landing.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    position: relative;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #fff;
+    top: 99%;
+}
+
+.navbar .toggler {
+    display: none;
+}
+
+.navbar .right i {
+    padding: 38px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .right ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .right ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 40px 10px;
+    border-bottom: 1px solid transparent;
+    transition: 0.6s;
+    position: relative;
+    z-index: 15;
+}
+
+.navbar .right ul li a:hover {
+    border-color: #00c7fc;
+    color: #00c7fc;
+}
+
+.navbar .left {
+    padding-top: 28px;
+}
+
+.navbar .left img {
+    width: 120px;
+}
+
+.home .caption {
+    background-color: #0f748fb3;
+    width: 50%;
+    margin-top: 9%;
+}
+
+.home .caption h3 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: white;
+    padding-left: 29%;
+}
+
+.home .caption h3.one {
+    padding-top: 50px;
+}
+
+.home .caption h3.sec {
+    margin-bottom: 20px;
+}
+
+.home .caption p {
+    color: white;
+    padding-left: 29%;
+    font-size: 14px;
+    line-height: 2;
+    padding-bottom: 50px;
+}
+
+.home .caption i {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.home .caption i:hover {
+    transform: scale(1.1);
+    color: #00c7fc;
+}
+
+.home .caption i.fa-angle-left {
+    top: 50%;
+    left: 30px;
+}
+
+.home .caption i.fa-angle-right {
+    top: 50%;
+    right: 30px;
+}
+
+.home .under ul {
+    position: absolute;
+    top: 93%;
+    left: 47%;
+    list-style-type: none;
+    display: flex;
+}
+
+.home .under ul li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.home .under ul li.selected {
+    border-color: #00c7fc;
+    background-color: #00c7fc;
+}
+
+.home .under ul li:hover {
+    border-color: #00c7fc;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h3 {
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    padding-top: 100px;
+    font-weight: normal;
+}
+
+.heading h3::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 1.5px;
+    background-color: black;
+    top: 115%;
+    left: 46.5%;
+}
+
+.heading h3::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    top: 109.5%;
+    left: 49.5%;
+    background-color: #fff;
+}
+
+.heading p {
+    line-height: 2;
+    color: #777;
+    margin-bottom: 100px;
+}
+
+.services .cards {
+    width: 100%;
+}
+
+.services .cards .line {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services .cards .line .card {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .cards .line .card .left i {
+    font-size: 50px;
+    background-color: #fff;
+}
+
+.services .cards .line .card h3 {
+    margin-bottom: 30px;
+    color: #00c7fc;
+}
+
+.services .cards .line .card p {
+    line-height: 2;
+    color: #777;
+}
+
+.services .cards .line2 {
+    margin-bottom: 100px;
+}
+
+.services .under-services {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.599), rgba(0, 0, 0, 0.599)), url(../img/design\ feature\ .jpg);
+    background-size: cover;
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+.services .under-services img {
+    padding: 130px 0 100px 220px;
+}
+
+.services .under-services .caption {
+    background-color: #0f748fb3;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.services .under-services .caption h3 {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.services .under-services .caption ul {
+    list-style-type: none;
+}
+
+.services .under-services .caption ul li {
+    padding: 15px 0;
+}
+
+.services .under-services .caption ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.portfolio ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.portfolio ul li {
+    padding: 10px;
+}
+
+.portfolio ul li.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+.portfolio .line {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.portfolio .line .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .line .card img {
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.portfolio .line .card .img-content {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    width: 100%;
+    padding: 20px 10px;
+    transition: 0.5s;
+}
+
+.portfolio .line .card .img-content h3 span {
+    color: #00c7fc;
+}
+
+.portfolio .line .card:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+
+.portfolio .line .card:hover .img-content {
+    position: absolute;
+    top: 68%;
+}
+
+.portfolio button {
+    display: flex;
+    color: #fff;
+    background-color: #00c7fc;
+    border: 1px solid transparent;
+    font-size: 14px;
+    padding: 15px 20px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.vid {
+    margin-top: 100px;
+}
+
+.vid .video video {
+    width: 100%;
+}
+
+.vid .video {
+    position: relative;
+}
+
+.vid .video::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.vid .video .title {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    padding: 50px;
+    background-color: #0f748fb3;
+    color: white;
+    text-align: center;
+}
+
+.vid .video .title h3 {
+    margin: 0 0 30px;
+    font-weight: normal;
+}
+
+.vid .video .title p {
+    margin-bottom: 30px;
+}
+
+.vid .video .title button {
+    padding: 12px 20px;
+    color: white;
+    background-color: #000;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.aboutus img {
+    display: flex;
+    margin: auto;
+}
+
+.aboutus .container {
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url(../img/stats.png);
+    background-size: cover;
+    padding: 100px;
+    transform: translateY(-120px);
+}
+
+.aboutus .line {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #0f748fb3;
+    padding: 50px;
+}
+
+.aboutus .line .card i {
+    color: white;
+    font-size: 20px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.aboutus .line .card h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aboutus .line .card h5 {
+    color: white;
+    font-size: 14px;
+}
+
+.us {
+    width: 100%;
+}
+
+.aboutus .us .us-line {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.aboutus .us .us-line .top h3 {
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.1px;
+}
+
+.aboutus .us .us-line .top p {
+    color: #777;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.aboutus .us .us-line .left {
+    width: 50%;
+    padding: 80px;
+    position: relative;
+}
+
+.aboutus .us .us-line .left .card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutus .us .us-line .left .card img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+.aboutus .us .us-line .left .card .title {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #777;
+}
+
+.aboutus .us .us-line .left .card p {
+    color: #000;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.aboutus .us .us-line .left .card h5 {
+    color: #777;
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.aboutus .us .us-line .left .under ul {
+    position: absolute;
+    top: 80%;
+    left: 47%;
+    list-style-type: none;
+    display: flex;
+}
+
+.aboutus .us .us-line .left .under ul li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.aboutus .us .us-line .left .under ul li.selected {
+    border-color: #00c7fc;
+    background-color: #00c7fc;
+}
+
+.aboutus .us .us-line .left .under ul li:hover {
+    border-color: #00c7fc;
+}
+
+.aboutus .us .us-line .right {
+    width: 50%;
+    padding: 80px;
+}
+
+.aboutus .us .us-line .right .rightline {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.aboutus .us .us-line .right .rightline h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.aboutus .us .us-line .right .rightline div {
+    height: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.aboutus .us .us-line .right .rightline div.one {
+    background-image: linear-gradient(to right, #19c8fa 90%, #dedadc 10%);
+}
+
+.aboutus .us .us-line .right .rightline div.one::before {
+    content: "90%";
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150%;
+    right: 6.5%;
+}
+
+.aboutus .us .us-line .right .rightline div.one::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    right: 8%;
+    bottom: 90%;
+}
+
+.aboutus .us .us-line .right .rightline div.two {
+    background-image: linear-gradient(to right, #19c8fa 80%, #dedadc 20%);
+}
+
+.aboutus .us .us-line .right .rightline div.two::before {
+    content: "80%";
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150%;
+    right: 17%;
+}
+
+.aboutus .us .us-line .right .rightline div.two::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    right: 18.5%;
+    bottom: 90%;
+}
+
+.aboutus .us .us-line .right .rightline div.three {
+    background-image: linear-gradient(to right, #19c8fa 85%, #dedadc 15%);
+}
+
+.aboutus .us .us-line .right .rightline div.three::before {
+    content: "85%";
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150%;
+    right: 12%;
+}
+
+.aboutus .us .us-line .right .rightline div.three::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    right: 13.5%;
+    bottom: 90%;
+}
+
+.aboutus .us .us-line .right .rightline div.four {
+    background-image: linear-gradient(to right, #19c8fa 75%, #dedadc 25%);
+}
+
+.aboutus .us .us-line .right .rightline div.four::before {
+    content: "75%";
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: block;
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150%;
+    right: 22%;
+}
+
+.aboutus .us .us-line .right .rightline div.four::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+    right: 23.5%;
+    bottom: 90%;
+}
+
+.aboutus .under-about {
+    text-align: center;
+    padding: 120px 0;
+    color: white;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.800), rgba(0, 0, 0, 0.800)), url(../img/quote.jpg);
+    background-size: cover;
+}
+
+.aboutus .under-about p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.aboutus .under-about h5 {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.pricing .line {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.pricing .line .card {
+    border-top: 1px solid #00c7fc;
+    text-align: center;
+    width: 20%;
+    background-color: #fcfcfc;
+}
+
+.pricing .line .card .head {
+    padding: 30px 0;
+    border-bottom: 1px solid #00c7fc;
+}
+
+.pricing .line .card .head h4 {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.pricing .line .card .head h2 {
+    font-size: 50px;
+    position: relative;
+}
+
+.pricing .line .card .head h2::before {
+    content: "$";
+    font-size: 20px;
+    position: absolute;
+    font-weight: normal;
+    left: 85px;
+    top: 0px;
+}
+
+.pricing .line .card .head h2::after {
+    content: "/Mo";
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 65px;
+}
+
+.pricing .line .card p {
+    padding: 20px 0;
+    border-bottom: 1px solid #00c7fc;
+    width: 200px;
+    margin: auto;
+}
+
+.pricing .line .card p.last {
+    width: 100%;
+}
+
+.pricing .line .card button {
+    padding: 15px 20px;
+    border: 1px solid #00c7fc;
+    background-color: #00c7fc;
+    margin: 20px 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.pricing .line .card button a {
+    text-decoration: none;
+    color: white;
+}
+
+.pricing .undercards {
+    text-align: center;
+}
+
+.pricing .undercards p {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+}
+
+.pricing .undercards button {
+    padding: 15px 30px;
+    background-color: #00c7fc;
+    border: 1px solid #00c7fc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.pricing .undercards button a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+.pricing .undercards button:hover {
+    animation: move 0.1s infinite;
+}
+
+.pricing .undercards button .hover {
+    display: none;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(2deg);
+    }
+
+    25% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    75% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: 2deg;
+    }
+}
+
+.subscribe {
+    padding: 100px 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.500), rgba(0, 0, 0, 0.500)), url(../img/footer.jpg);
+    background-position: top;
+    margin-top: 100px;
+}
+
+.subscribe .line {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+
+.subscribe .line input {
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-right: none;
+    color: white;
+    padding: 10px 20px;
+    width: 300px;
+    outline: none;
+}
+
+.subscribe .line button {
+    height: 50px;
+    padding: 8px 18px;
+    border: 1px solid white;
+    background-color: #00c7fc;
+    border-left: none;
+    color: white;
+    font-weight: bold;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.subscribe .line p {
+    line-height: 2;
+    color: white;
+    margin-left: 150px;
+    margin-top: -8px;
+}
+
+.contact .heading p {
+    margin-bottom: 60px;
+}
+
+.contact .line {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+
+.contact .left {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contact .left input {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    margin: 0 0 30px 0;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.contact .left input:focus {
+    border-color: #00c7fc;
+}
+
+.contact .left textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px 20px;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.contact .left textarea:focus {
+    border-color: #00c7fc;
+}
+
+.contact .left button {
+    position: absolute;
+    top: 105%;
+    right: 0px;
+    background-color: #00c7fc;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact .line .caption {
+    width: 25%;
+}
+
+.contact .line .caption h4 {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact .line .caption p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contact .line .caption .caption1 {
+    margin-bottom: 70px;
+}
+
+footer {
+    padding: 50px 0;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.700), rgba(0, 0, 0, 0.700)), url(../img/footer.jpg);
+    background-size: cover;
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+}
+
+footer img {
+    margin-bottom: 60px;
+}
+
+footer p {
+    padding: 20px 10px;
+    width: 220px;
+    margin: auto;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+}
+
+footer .social {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding-left: 35px;
+}
+
+footer .social a i {
+    transition: all 0.5s;
+}
+
+footer .social a i:hover {
+    transform: scale(1.1) rotate(360deg);
+    color: #00c7fc;
+}
+
+footer .copy {
+    margin-top: 60px;
+}
+
+footer .copy a {
+    text-decoration: none;
+    color: #00c7fc;
+    font-weight: bold;
+}
+
+@media(max-width:960px) {
+
+    .navbar .right ul {
+        display: none;
+    }
+
+    .navbar .toggler {
+        display: block;
+        color: white;
+        font-size: 45px;
+        padding: 20px 0;
+        transition: 0.6s;
+        margin: 0;
+    }
+
+    .navbar .toggler:hover {
+        color: #00c7fc;
+        transform: rotate(360deg);
+    }
+
+    .navbar .left {
+        width: 80%;
+        padding-top: 0;
+        padding: 15px;
+    }
+
+    .navbar .left img {
+        width: 170px;
+    }
+
+    .home .caption {
+        margin-top: 20%;
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .home .caption h3 {
+        font-size: 40px;
+        padding-left: 0;
+    }
+
+    .home .caption p {
+        padding-left: 0;
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+
+    .home .caption i {
+        font-size: 40px;
+    }
+
+    .home .under ul {
+        left: 45%;
+    }
+
+    .home .under ul li {
+        width: 25px;
+        height: 25px;
+    }
+
+    .heading h3 {
+        font-size: 45px;
+    }
+
+    .heading h3::before {
+        left: 43%;
+    }
+
+    .heading h3::after {
+        width: 18px;
+        height: 18px;
+        top: 109%;
+        left: 48.5%;
+    }
+
+    .heading p {
+        font-size: 20px;
+    }
+
+    .services .cards .line {
+        width: 90%;
+    }
+
+    .services .cards .line .card .left i {
+        font-size: 45px;
+    }
+
+    .services .cards .line .card h3 {
+        font-size: 25px;
+        padding: 7px 15px;
+        margin-bottom: 10px;
+    }
+
+    .services .cards .line .card p {
+        font-size: 19px;
+    }
+
+    .services .under-services img {
+        padding: 120px 0 120px 40px;
+        width: 300px;
+    }
+
+    .services .under-services .caption {
+        padding: 40px;
+        top: 23%;
+    }
+
+    .services .under-services .caption h3 {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .services .under-services .caption ul li {
+        font-size: 19px;
+    }
+
+    .services .under-services .caption ul li:before {
+        top: 0px;
+        font-size: 22px;
+    }
+
+    .portfolio ul li {
+        padding: 13px;
+        font-size: 20px;
+    }
+
+    .portfolio .line {
+        width: 200%;
+    }
+
+    .portfolio button {
+        font-size: 20px;
+        padding: 20px 25px;
+    }
+
+    .vid .video .title {
+        position: absolute;
+        top: 18%;
+        padding: 60px;
+    }
+
+    .vid .video .title h3 {
+        font-size: 27px;
+    }
+
+    .vid .video .title p {
+        font-size: 20px;
+    }
+
+    .vid .video .title button {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
+
+    .aboutus img {
+        width: 450px;
+    }
+
+    .aboutus .container {
+        padding: 100px 36px;
+        transform: translateY(-80px);
+    }
+
+    .aboutus .line {
+        width: 100%;
+        padding: 45px;
+    }
+
+    .aboutus .line .card i {
+        font-size: 30px;
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .line .card h2 {
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+
+    .aboutus .line .card h5 {
+        font-size: 17px;
+    }
+
+    .aboutus .us .us-line {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .aboutus .us .us-line .top h3 {
+        margin-bottom: 40px;
+        font-size: 35px;
+    }
+
+    .aboutus .us .us-line .top p {
+        font-size: 22px;
+    }
+
+    .aboutus .us .us-line .left {
+        width: 100%;
+    }
+
+    .aboutus .us .us-line .left .card .title {
+        font-size: 22px;
+    }
+
+    .aboutus .us .us-line .left .card p {
+        margin-top: 50px;
+    }
+
+    .aboutus .us .us-line .left .card h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .aboutus .us .us-line .left .under ul {
+        top: 95%;
+        left: 45%;
+    }
+
+    .aboutus .us .us-line .left .under ul li {
+        width: 20px;
+        height: 20px;
+    }
+
+    .aboutus .us .us-line .right {
+        width: 100%;
+    }
+
+    .aboutus .us .us-line .right .rightline h4 {
+        font-size: 20px;
+    }
+
+    .aboutus .us .us-line .right .rightline div {
+        height: 40px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.one::before {
+        width: 40px;
+        bottom: 135%;
+        right: 5.5%;
+        font-size: 19px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.two::before {
+        width: 40px;
+        bottom: 135%;
+        right: 16%;
+        font-size: 19px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.three::before {
+        width: 40px;
+        bottom: 135%;
+        right: 11%;
+        font-size: 19px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.four::before {
+        width: 40px;
+        bottom: 135%;
+        right: 21%;
+        font-size: 19px;
+    }
+
+    .aboutus .under-about {
+        padding: 120px 50px;
+    }
+
+    .aboutus .under-about h5 {
+        font-size: 22px;
+    }
+
+    .pricing .line {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .pricing .line .card {
+        width: 47%;
+        margin-bottom: 50px;
+        transition: all 0.5s;
+        border-radius: 40px;
+        border-top: 2px solid #00c7fc;
+    }
+
+    .pricing .line .card:hover {
+        transform: translateY(-20px);
+    }
+
+    .pricing .line .card .head h4 {
+        font-size: 20px;
+    }
+
+    .pricing .line .card .head h2 {
+        font-size: 60px;
+    }
+
+    .pricing .line .card .head h2::before {
+        font-size: 30px;
+        left: 90px;
+    }
+
+    .pricing .line .card .head h2::after {
+        font-size: 27px;
+        right: 70px;
+    }
+
+    .pricing .line .card p {
+        font-size: 22px;
+        padding: 25px 0;
+    }
+
+    .pricing .line .card button {
+        padding: 20px 25px;
+        margin: 25px 0;
+        font-size: 20px;
+    }
+
+    .pricing .undercards p {
+        margin: 30px 0 15px 0;
+        font-size: 25px;
+    }
+
+    .pricing .undercards button {
+        padding: 20px 30px;
+    }
+
+    .pricing .undercards button a {
+        font-size: 23px;
+    }
+
+    .subscribe {
+        padding: 50px 0;
+        margin-top: 80px;
+    }
+
+    .subscribe .line {
+        width: 95%;
+        margin-top: 0px;
+    }
+
+    .subscribe .line input {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+
+    .subscribe .line button {
+        margin-left: 0px;
+        font-size: 18px;
+        margin-top: 100px;
+    }
+
+    .subscribe .line p {
+        margin-left: 20px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+
+
+    .contact .line {
+        width: 90%;
+        padding: 0px 0px;
+    }
+
+    .contact .left input {
+        font-size: 19px;
+    }
+
+    .contact .left textarea {
+        font-size: 19px;
+    }
+
+    .contact .left button {
+        font-size: 18px;
+    }
+
+    .contact .line .caption {
+        width: 26%;
+    }
+
+    .contact .line .caption h4 {
+        margin-bottom: 25px;
+        font-size: 22px;
+    }
+
+    .contact .line .caption p {
+        font-size: 18px;
+    }
+
+    footer img {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+
+    footer p {
+        font-size: 25px;
+    }
+
+    footer .social a {
+        font-size: 29px;
+        padding-left: 20px;
+        transition: all 0.5s;
+    }
+
+    footer .social a:hover {
+        transform: translate(360deg);
+    }
+
+    footer .copy {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .navbar {
+        width: 80%;
+    }
+
+    .navbar .toggler {
+        font-size: 30px;
+    }
+
+    .navbar .toggler:hover {
+        transform: rotate(0);
+    }
+
+    .navbar .left {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .navbar .left img {
+        width: 105px;
+    }
+
+    .home .caption {
+        margin-top: 25%;
+        padding: 0px 50px;
+    }
+
+    .home .caption h3 {
+        font-size: 22px;
+    }
+
+    .home .caption h3.one {
+        padding-top: 20px;
+    }
+
+    .home .caption p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .home .caption i {
+        font-size: 28px;
+    }
+
+    .home .under ul {
+        left: 42%;
+    }
+
+    .home .under ul li {
+        width: 12px;
+        height: 12px;
+    }
+
+    .heading h3 {
+        font-size: 30px;
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .heading h3::before {
+        width: 90px;
+        left: 38%;
+    }
+
+    .heading h3::after {
+        width: 12px;
+        height: 12px;
+        top: 107%;
+        left: 48%;
+    }
+
+    .heading p {
+        width: 80%;
+        margin: auto;
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+
+    .services .cards .line {
+        width: 85%;
+        margin-bottom: 0;
+    }
+
+    .services .cards .line .card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        background-color: rgb(247, 247, 247);
+        padding: 20px;
+        border-radius: 20px;
+        transition: all 0.5s;
+    }
+
+    .services .cards .line .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .services .cards .line .card .left i {
+        font-size: 30px;
+        padding: 5px 0;
+    }
+
+    .services .cards .line .card h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .services .cards .line .card p {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .services .cards .line2 {
+        margin-bottom: 50px;
+    }
+
+    .services .under-services {
+        padding: 50px 0px 0px 20px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 450px;
+        background-position: center;
+    }
+
+    .services .under-services img {
+        padding: 0;
+        width: 150px;
+        position: absolute;
+        top: 70%;
+        left: 30%;
+    }
+
+    .services .under-services .caption {
+        background-color: #0f748fb3;
+        padding: 30px;
+        position: absolute;
+        left: 15%;
+        top: 8%;
+        width: 90%;
+    }
+
+    .services .under-services .caption h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .services .under-services .caption ul li {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    .services .under-services .caption ul li:before {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .portfolio ul li {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .portfolio .line {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio .line .card {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .portfolio .line .card .img-content {
+        padding: 25px 15px;
+        transition: 0.5s;
+    }
+    
+    .portfolio .line .card .img-content h3 {
+        font-size: 18px;
+    }
+    .portfolio .line .card .img-content h3 span {
+        font-size: 14px;
+    }
+
+    .portfolio button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px auto;
+    }
+
+
+    .vid {
+        margin-top: 50px;
+    }
+
+    .vid .video .title {
+        width: 100%;
+        top: 20%;
+        padding: 14px;
+    }
+
+    .vid .video .title h3 {
+        margin: 0 0 10px;
+        font-size: 20px;
+    }
+
+    .vid .video .title p {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .vid .video .title button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .aboutus img {
+        width: 320px;
+    }
+
+    .aboutus .container {
+        padding: 50px 10px;
+        transform: translateY(-50px);
+    }
+
+    .aboutus .line {
+        padding: 30px 0;
+    }
+
+    .aboutus .line .card i {
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    .aboutus .line .card h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .aboutus .line .card h5 {
+        font-size: 14px;
+    }
+
+    .aboutus .us .us-line .top h3 {
+        margin-bottom: 25px;
+        font-size: 27px;
+    }
+
+    .aboutus .us .us-line .top p {
+        font-size: 16px;
+    }
+
+    .aboutus .us .us-line .left {
+        width: 90%;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .aboutus .us .us-line .left .card {
+        margin-bottom: 20px;
+        background-color: #f7f6f6;
+        padding: 25px 10px 0 10px;
+        border-radius: 20px;
+        border-bottom: 2px solid #777;
+        transition: all 0.5s;
+    }
+
+    .aboutus .us .us-line .left .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .aboutus .us .us-line .left .card img {
+        width: 80px;
+        border-radius: 50px;
+    }
+
+    .aboutus .us .us-line .left .card .title {
+        font-size: 15px;
+        width: 100%;
+        border: none;
+    }
+
+    .aboutus .us .us-line .left .card p {
+        margin-top: 20px;
+    }
+
+    .aboutus .us .us-line .left .card h5 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .aboutus .us .us-line .left .under ul {
+        top: 100%;
+        left: 40%;
+    }
+
+    .aboutus .us .us-line .left .under ul li {
+        width: 15px;
+        height: 15px;
+    }
+
+    .aboutus .us .us-line .right {
+        width: 90%;
+        padding: 0;
+        margin: 100px auto;
+    }
+
+    .aboutus .us .us-line .right .rightline {
+        margin-bottom: 15px;
+    }
+
+    .aboutus .us .us-line .right .rightline h4 {
+        font-size: 14px;
+    }
+
+    .aboutus .us .us-line .right .rightline div {
+        height: 25px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.one::before {
+        width: 25px;
+        font-size: 12px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.one::after {
+        right: 7.5%;
+        bottom: 75%;
+    }
+
+    .aboutus .us .us-line .right .rightline div.two::before {
+        width: 25px;
+        font-size: 12px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.two::after {
+        right: 18%;
+        bottom: 75%;
+    }
+
+    .aboutus .us .us-line .right .rightline div.three::before {
+        width: 25px;
+        font-size: 12px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.three::after {
+        right: 13%;
+        bottom: 75%;
+    }
+
+    .aboutus .us .us-line .right .rightline div.four::before {
+        width: 25px;
+        font-size: 12px;
+    }
+
+    .aboutus .us .us-line .right .rightline div.four::after {
+        right: 23%;
+        bottom: 75%;
+    }
+
+    .aboutus .under-about {
+        padding: 60px 10px;
+    }
+
+    .aboutus .under-about p {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .aboutus .under-about h5 {
+        font-size: 14px;
+    }
+
+    .pricing .line {
+        width: 80%;
+    }
+
+    .pricing .line .card {
+        width: 100%;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .pricing .line .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .pricing .line .card .head h4 {
+        font-size: 19px;
+    }
+
+    .pricing .line .card .head h2 {
+        font-size: 40px;
+    }
+
+    .pricing .line .card .head h2::before {
+        font-size: 23px;
+        left: 95px;
+    }
+
+    .pricing .line .card .head h2::after {
+        font-size: 22px;
+    }
+
+    .pricing .line .card p {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .pricing .line .card button {
+        padding: 10px 15px;
+        margin: 20px 0;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+
+    .pricing .undercards p {
+        font-size: 20px;
+    }
+
+    .pricing .undercards button {
+        padding: 10px 15px;
+    }
+
+    .pricing .undercards button a {
+        font-size: 20px;
+    }
+
+    .subscribe {
+        padding: 40px 0;
+        margin-top: 30px;
+    }
+
+    .subscribe .line {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .subscribe .line input {
+        width: 70%;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    .subscribe .line button {
+        margin-left: 0px;
+        font-size: 13px;
+        width: 30%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .subscribe .line p {
+        margin-left: 0px;
+        font-size: 18px;
+    }
+
+
+    .contact .line {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .contact .left {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .contact .left input {
+        font-size: 17px;
+        height: 50px;
+        margin: 0 0 10px 0;
+    }
+
+    .contact .left textarea {
+        font-size: 17px;
+    }
+
+    .contact .left button {
+        font-size: 15px;
+        padding: 15px 20px;
+        right: 26%;
+    }
+
+    .contact .line .caption {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contact .line .caption h4 {
+        margin-bottom: 15px;
+        font-size: 27px;
+    }
+
+    .contact .line .caption p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .contact .line .caption .caption1 {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding: 30px 0;
+        margin-top: 30px;
+    }
+
+    footer img {
+        width: 130px;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 20px;
+        width: 180px;
+    }
+
+    footer .social a {
+        font-size: 18px;
+        padding-left: 30px;
+    }
+
+    footer .copy {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
